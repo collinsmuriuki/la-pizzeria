@@ -1,0 +1,78 @@
+/* global styling */
+body{
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.align-center{
+  text-align: center;
+}
+
+.transparent{
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  background-attachment: fixed;
+  /* margin-bottom: 400px; */
+}
+
+/* navbar styling */
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+
+.nav-link{
+  font-family: 'Julius Sans One', sans-serif;
+  color: #000;
+}
+
+.brand-name{
+  font-family: 'Pattaya', sans-serif;
+  color: #000;
+}
+
+.navbar-brand{
+  display: flex;
+}
+
+.navbar-brand h5{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* carousel styling */
+.carousel{
+  height: 100%;
+}
+
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+/* .carousel-caption{
+  margin-bottom: 160px;
+  background: rgba(0, 0, 0, 0.2);
+} */
+
+.c-head{
+  font-weight: bold;
+  font-size: 58px;
+  mix-blend-mode: difference;
+}
+
+.c-par{
+  font-weight: bold;
+  mix-blend-mode: difference;
+}
+
+
+/* cards styling */
+.card{
+  margin-bottom: 20px;
+}
