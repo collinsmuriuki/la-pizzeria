@@ -89,7 +89,7 @@ class Pizza{
   }
 
   getTotalPlusDelivery(){
-    let grossPrice = this.getTotalPickedUp();
+    let grossPrice = this.getTotal();
     let deliveryFee = this.toDeliver();
 
     return grossPrice + deliveryFee;
