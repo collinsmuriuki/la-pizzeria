@@ -9,27 +9,52 @@ class Pizza{
     this.price = 500;
   }
 
-  sizePrice(){
+
+  pricePerType(){
+    if (this.type === "Cheesey Chicken"){
+      this.price = 300;
+      return this.price;
+    } else if (this.type === "Hippy Hawaiian"){
+      this.price = 400;
+      return this.price;
+    } else if (this.type === "Stripylicious"){
+      this.price = 600;
+      return this.price;
+    } else if (this.type === "Sweet Pie"){
+      this.price = 500;
+      return this.price;
+    } else if (this.type === "Classic Peperoni"){
+      this.price = 600;
+      return this.price;
+    } else if (this.type === "Heissy Hot"){
+      this.price = 400;
+      return this.price;
+    }
+  }
+
+
+  pricePerSize(){
+    let typePrice = this.pricePerType();
     if (this.size === "large") {
-      this.price += 500;
-      return this.price;
+      typePrice += 500;
+      return typePrice;
     } else if (this.size === "medium"){
-      this.price += 300;
-      return this.price;
+      typePrice += 300;
+      return typePrice;
     } else {
-      return this.price;
+      return typePrice;
     }
   }
 
   addToppings(){
     if (this.toppings === "double-toppings") {
-      return 300;
+      return 200;
     } else if (this.toppings === "extra-cheese"){
-      return 100;
+      return 50;
     } else if (this.toppings === "extra-dip"){
-      return 150;
-    } else if (this.toppings === "diced pineapples") {
       return 100;
+    } else if (this.toppings === "diced pineapples") {
+      return 50;
     } else {
       return 0;
     }
@@ -56,11 +81,11 @@ class Pizza{
   }
 
   getTotalPickedUp(){
-    let pricePerSize = this.sizePrice();
+    let pricePerSizeAndType = this.pricePerSize();
     let extraToppingsPrice = this.addToppings();
     let crustPrice = this.chooseCrust();
 
-    return pricePerSize + extraToppingsPrice + crustPrice;
+    return pricePerSizeAndType + extraToppingsPrice + crustPrice;
   }
 
   getTotalDelivered(){
@@ -71,6 +96,6 @@ class Pizza{
   }
 }
 
-let oldie = new Pizza ("Peperoni Pizza", "large", "double-toppings", "pan-pizza", true);
+let oldie = new Pizza ("Stripylicious", "large", "extra-dip", "standard", true);
 
-alert(oldie.getTotalPickedUp());
+alert(oldie.getTotalDelivered());
