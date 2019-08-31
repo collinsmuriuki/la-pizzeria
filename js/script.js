@@ -80,7 +80,7 @@ class Pizza{
     }
   }
 
-  getTotalPickedUp(){
+  getTotal(){
     let pricePerSizeAndType = this.pricePerSize();
     let extraToppingsPrice = this.addToppings();
     let crustPrice = this.chooseCrust();
@@ -88,7 +88,7 @@ class Pizza{
     return pricePerSizeAndType + extraToppingsPrice + crustPrice;
   }
 
-  getTotalDelivered(){
+  getTotalPlusDelivery(){
     let grossPrice = this.getTotalPickedUp();
     let deliveryFee = this.toDeliver();
 
@@ -98,4 +98,4 @@ class Pizza{
 
 let oldie = new Pizza ("Stripylicious", "large", "extra-dip", "standard", true);
 
-alert(oldie.getTotalDelivered());
+alert(oldie.getTotalPlusDelivery());
