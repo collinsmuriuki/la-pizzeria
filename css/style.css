@@ -40,6 +40,10 @@ body{
 }
 
 /* jumbotron styling */
+.heading{
+  font-family: 'Abril Fatface', cursive;
+}
+
 .jumbotron{
   border-radius: 0;
 }
@@ -131,4 +135,38 @@ form {
 
 .sum-price{
   cursor: pointer;
+}
+
+/* about us */
+.about{
+  background-image: url("../images/italian-italy-pasta-3498.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+}
+
+.us{
+  font-size: 58px;
+  margin-top: 20px;
+}
+
+/* founder */
+.founder{
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+}
+
+/* footer */
+.footer-logo{
+  display: flex;
+}
+
+.reduce{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.link{
+  color: #000;
 }
