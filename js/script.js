@@ -103,8 +103,6 @@ class Pizza{
 
 }
 
-// let oldie = new Pizza ("Stripylicious", "large", "extra-dip", "standard", true, 3);
-
 $("#to-be-delivered").click(()=>{
   $("#location-hide").show();
 });
