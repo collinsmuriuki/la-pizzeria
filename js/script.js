@@ -113,12 +113,12 @@ $("#to-be-picked").click(()=>{
   $("#location-hide").hide();
 });
 
-$("#total").click(()=>{
-  $("div#price-breakdown").show();
+$("#to-be-delivered2").click(()=>{
+  $("#location-hide2").show();
 });
 
-$("#div#price-breakdown").click(()=>{
-  $("div#price-breakdown").hide();
+$("#to-be-picked2").click(()=>{
+  $("#location-hide2").hide();
 });
 
 //ui logic
@@ -129,8 +129,8 @@ $("#pizza-one-form").submit((event)=>{
   let toppingType = $("#topping-selector").val();
   let crustType = $("#crust-selector").val();
   let delivery = $("#to-be-delivered").is(":checked");
-
   let pickUp = $("#to-be-picked").is(":checked");
+
   const getDeliveryOption = () => {
     if (delivery == true && pickUp == false){
       return true;
@@ -138,7 +138,6 @@ $("#pizza-one-form").submit((event)=>{
       return false;
     }
   }
-
 
   let optionOfDelivery = getDeliveryOption();
   let pizzaQuantity = Number($("#pizza-quantity").val());
@@ -151,5 +150,35 @@ $("#pizza-one-form").submit((event)=>{
   $("#crust-price").text(cheesey.crust + ": " + cheesey.chooseCrust());
   $("#delivery-price").text("Delivery fee: " + cheesey.toDeliver());
 
+
+});
+
+$("#pizza-two-form").submit((event)=>{
+  event.preventDefault();
+  let pizzaName = $("#pizza-two-label").text();
+  let pizzaSize = $("#size-selector2").val();
+  let toppingType = $("#topping-selector2").val();
+  let crustType = $("#crust-selector2").val();
+  let delivery = $("#to-be-delivered2").is(":checked");
+  let pickUp = $("#to-be-picked2").is(":checked");
+
+  const getDeliveryOption = () => {
+    if (delivery == true && pickUp == false){
+      return true;
+    } else if (delivery == false && pickUp == true) {
+      return false;
+    }
+  }
+
+  let optionOfDelivery = getDeliveryOption();
+  let pizzaQuantity = Number($("#pizza-quantity2").val());
+
+  //creating an instance of the Pizza class
+  let hippy = new Pizza(pizzaName, pizzaSize, toppingType, crustType, optionOfDelivery, pizzaQuantity);
+  $("#total-price2").text("Ksh. " + hippy.getTotalPlusDelivery());
+  $("#size-price2").text(hippy.size + ": " + hippy.pricePerSize());
+  $("#toppings-price2").text(hippy.toppings + ": " + hippy.addToppings());
+  $("#crust-price2").text(hippy.crust + ": " + hippy.chooseCrust());
+  $("#delivery-price2").text("Delivery fee: " + hippy.toDeliver());
 
 });

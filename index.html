@@ -76,7 +76,7 @@
           <div class="card-body">
             <h5 class="card-title">Hippy Hawaiian</h5>
             <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
-            <button type="button" class="btn btn-outline-secondary"><i class="fas fa-shopping-cart"></i></button>
+            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#pizza-two"><i class="fas fa-shopping-cart"></i></button>
           </div>
         </div>
       </div>
@@ -211,6 +211,100 @@
               <!-- <div class="modal-footer"> -->
                 <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
                 <input type="submit" class="btn btn-link" id="get-price" value="get price">
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
+              <!-- </div> -->
+            </div>
+            <!-- <input type="submit" class="btn btn-link btn-sm" id="get-price" value="get price"> -->
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pizza-two" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pizza-two-label">Hippy Hawaiian</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="pizza-two-form">
+            <label>
+              Quantity:
+              <input type="number" class="form-control" id="pizza-quantity2" min="1">
+            </label>
+            <br>
+            <label>
+              Pick Your Size:
+              <select class="form-control drop" id="size-selector2">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+              </select>
+            </label>
+            <br>
+            <label>
+              Topping Options:
+              <select class="form-control drop" id="topping-selector2">
+                <option>Standard</option>
+                <option>Double Toppings</option>
+                <option>Extra Cheese</option>
+                <option>Extra Dip</option>
+                <option>Diced Pineapples</option>
+              </select>
+            </label>
+            <br>
+            <label>
+              Crust Options:
+              <select class="form-control drop" id="crust-selector2">
+                <option>Standard</option>
+                <option>Italian Thin Crust</option>
+                <option>Pan Pizza</option>
+                <option>American Hand Tossed</option>
+              </select>
+            </label>
+            <div class="form-check">
+              <label for="delivery-options">
+                Delivery:
+                <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered2">
+              </label>
+              <label for="delivery-options">
+                Pick Up:
+                <input type="radio" class="delivery" name="delivery-options" value="pick-up" id="to-be-picked2">
+              </label>
+              <br>
+              <label for="location" id="location-hide2">
+                <input type="text" class="form-control box" name="location" placeholder="Deliver To" id="delivery-location2">
+              </label>
+            </div>
+            <div class="container">
+              <div class="summary">
+                <div id="price-breakdown2">
+                  <div class="summary-items">
+                    <p class="space"><span id="size-price2"></span></p>
+                  </div>
+                  <div class="summary-items">
+                    <p class="space"><span id="toppings-price2"></span></p>
+                  </div>
+                  <div class="summary-items">
+                    <p class="space"><span id="crust-price2"></span></p>
+                  </div>
+                  <div class="summary-items">
+                    <p class="space"><span id="delivery-price2"></span></p>
+                  </div>
+                </div>
+                <div class="summary-items total" id="total2">
+                  <h5 class="sum-price" id="total-price2"></h5>
+                </div>
+              </div>
+              <!-- <div class="modal-footer"> -->
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                <input type="submit" class="btn btn-link" id="get-price2" value="get price">
                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
               <!-- </div> -->
             </div>

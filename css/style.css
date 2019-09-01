@@ -90,10 +90,14 @@ form {
 }
 
 .drop{
-  width: 200px;
+  width: 210px;
 }
 
 #location-hide{
+  display: none;
+}
+
+#location-hide2{
   display: none;
 }
 
@@ -115,10 +119,6 @@ form {
 
 .total{
   font-weight: 800;
-}
-
-#price-breakdown{
-  display: none;
 }
 
 #get-price:hover{
