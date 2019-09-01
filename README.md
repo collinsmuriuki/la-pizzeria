@@ -1,8 +1,10 @@
 # LA PIZZERIA
 ####  A web application for a fictional Pizza Shop, 30/8/2019
-![alt text]()
+![alt text](images/screenshots/sc1.jpg)
 
-![alt text]()
+![alt text](images/screenshots/sc2.jpg)
+
+![alt text](images/screenshots/sc3.jpg)
 
 ## Author
 Collins Muriuki
