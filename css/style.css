@@ -11,7 +11,6 @@ body{
   background: rgba(0, 0, 0, 0.1);
   border-radius: 0;
   background-attachment: fixed;
-  /* margin-bottom: 400px; */
 }
 
 /* navbar styling */
@@ -40,9 +39,13 @@ body{
   margin-left: 10px;
 }
 
-/* carousel styling */
-.carousel{
-  height: 100%;
+/* jumbotron styling */
+.jumbotron{
+  border-radius: 0;
+}
+
+.jumbotron-text{
+  margin-top: 150px;
 }
 
 hr.style-one {
@@ -55,24 +58,77 @@ hr.style-one {
   background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
 }
 
-/* .carousel-caption{
-  margin-bottom: 160px;
-  background: rgba(0, 0, 0, 0.2);
-} */
-
 .c-head{
-  font-weight: bold;
+  font-weight:900;
   font-size: 58px;
-  mix-blend-mode: difference;
+  mix-blend-mode: luminosity;
 }
 
 .c-par{
-  font-weight: bold;
-  mix-blend-mode: difference;
+  font-weight: 900;
+  mix-blend-mode: luminosity;
 }
 
-
+.jumbo-bg{
+  background-image: url("../images/blur-burn-dark-1082343.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 480px;
+}
 /* cards styling */
 .card{
   margin-bottom: 20px;
+}
+
+.flex{
+  display: flex;
+}
+
+/* modal styling */
+form {
+  text-align: center;
+}
+
+.drop{
+  width: 200px;
+}
+
+#location-hide{
+  display: none;
+}
+
+.summary{
+  text-align: left;
+  margin-bottom: 0px;
+  float: left;
+}
+
+.summary-items{
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.space{
+  margin-bottom: 0;
+}
+
+.total{
+  font-weight: 800;
+}
+
+#price-breakdown{
+  display: none;
+}
+
+#get-price:hover{
+  text-decoration: none;
+}
+
+#pizza-quantity{
+  width: 100px;
+}
+
+.sum-price{
+  cursor: pointer;
 }
