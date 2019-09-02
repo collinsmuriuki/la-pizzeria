@@ -145,8 +145,20 @@ form {
   width: 100px;
 }
 
+#pizza-quantity2{
+  width: 100px;
+}
+
 .sum-price{
   cursor: pointer;
+}
+
+#checkout{
+  display: none;
+}
+
+#checkout2{
+  display: none;
 }
 
 /* about us */

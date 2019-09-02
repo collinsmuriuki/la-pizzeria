@@ -119,6 +119,17 @@ $("#to-be-picked2").click(()=>{
   $("#location-hide2").hide();
 });
 
+//next button events
+$("#get-price").click(()=>{
+  $(this).css("display", "none");
+  $("#checkout").show();
+});
+
+$("#get-price2").click(()=>{
+  $(this).css("display", "none");
+  $("#checkout2").show();
+});
+
 //event
 let deliveryLocationA = $("#delivery-location").val();
 let deliveryLocationB = $("#delivery-location2").val();
@@ -132,6 +143,8 @@ $("#checkout2").click(()=>{
   $("#where-to2").text(deliveryLocationB);
   $("#my-alert2").show();
 });
+
+
 
 //ui logic
 $("#pizza-one-form").submit((event)=>{
@@ -158,9 +171,9 @@ $("#pizza-one-form").submit((event)=>{
   //creating an instance of the Pizza class
   let cheesey = new Pizza(pizzaName, pizzaSize, toppingType, crustType, optionOfDelivery, pizzaQuantity);
   $("#total-price").text("Ksh. " + cheesey.getTotalPlusDelivery());
-  $("#size-price").text(cheesey.size + ": " + cheesey.pricePerSize());
-  $("#toppings-price").text(cheesey.toppings + ": " + cheesey.addToppings());
-  $("#crust-price").text(cheesey.crust + ": " + cheesey.chooseCrust());
+  $("#size-price").text("Size: " + cheesey.pricePerSize());
+  $("#toppings-price").text("Toppings: " + cheesey.addToppings());
+  $("#crust-price").text("Crust: " + cheesey.chooseCrust());
   $("#delivery-price").text("Delivery fee: " + cheesey.toDeliver());
 
 });
