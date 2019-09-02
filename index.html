@@ -202,7 +202,7 @@
               </label>
               <br>
               <label id="location-hide">
-                <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location" required>
+                <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location">
               </label>
             </div>
             <div class="container">
@@ -226,7 +226,7 @@
                 </div>
               </div>
               <input type="submit" class="btn btn-primary" id="get-price" value="Next">
-              <button type="sumbit" class="btn btn-primary" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
+              <button type="button" class="btn btn-primary" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
             </div>
 
           </form>
@@ -282,17 +282,17 @@
               </select>
             </label>
             <div class="form-check">
-              <label for="delivery-options">
+              <label for="delivery">
                 Delivery:
-                <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered2" required>
+                <input type="radio" class="delivery" value="delivery" id="to-be-delivered2" name="delivery" required>
               </label>
-              <label for="delivery-options">
+              <label for="delivery">
                 Pick Up:
-                <input type="radio" class="delivery" name="delivery-options" value="pick-up" id="to-be-picked2" required>
+                <input type="radio" class="delivery" value="pick-up" id="to-be-picked2" name="delivery" required>
               </label>
               <br>
               <label id="location-hide2">
-                <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location2" required>
+                <input type="text" placeholder="Deliver To" id="delivery-location2">
               </label>
             </div>
             <div class="container">

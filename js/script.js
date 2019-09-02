@@ -121,12 +121,10 @@ $("#to-be-picked2").click(()=>{
 
 //next button events
 $("#get-price").click(()=>{
-  $(this).css("display", "none");
   $("#checkout").show();
 });
 
 $("#get-price2").click(()=>{
-  $(this).css("display", "none");
   $("#checkout2").show();
 });
 
