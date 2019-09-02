@@ -13,7 +13,7 @@ Collins Muriuki
 La Pizzeria V1.0
 
 ## Description
-La Pizzeria is a fictional pizza shop located in the Hub Karen, Nairobi with a web application which allows users to make orders. The app has a variety of pizzas to choose from with various options of size, toppings and crust. The user can also request for delivery of the pizza and can order as many pizzas as he or she wishes.
+La Pizzeria is a fictional pizza shop located in the Hub Karen, Nairobi with a web application which allows users to make orders. The app has a variety of pizzas to choose from with various options of size, toppings and crust. The user can also request for delivery of the pizza and can order as many pizzas as he or she wishes. For version 1.0, only two pizzas are available to be ordered.
 
 ## Features
 Here are the features in summary:
