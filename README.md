@@ -23,6 +23,10 @@ Here are the features in summary:
 * Opting to have the pizza delivered or picked up.
 * Ability to order more than one pizza.
 
+## Behaviour Driven Development (BDD)
+|Behaviour 	           |    Input 	                 |       Output          |
+|----------------------------------------------|:-----------------------------------:|-----------------------------:|       
+|Page loads, clicking on menu tab on the navbar will take the user to the menu section                         |   User selects the pizza he would like to order and a modal with a form containing options for size, crust, toppings and delivery               |A price breakdown and grand total price will appear as well as a checkout button to confirm order    |                       |
 
 ## Installation and Set-up
 To view the app, open the Github Pages link provided below on the README.
