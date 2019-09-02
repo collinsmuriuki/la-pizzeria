@@ -11,6 +11,22 @@
   <script src="https://kit.fontawesome.com/2e65670cdd.js"></script>
 </head>
 <body>
+  <!-- ALERT -->
+  <div class="alert alert-primary alert-dismissible fade show" role="alert" id="my-alert">
+    Thank you, we shall make your delivery to <span id="where-to"></span>.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="close-alert">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="alert alert-primary alert-dismissible fade show" role="alert" id="my-alert2">
+    Thank you, we shall make your delivery to <span id="where-to2"></span>.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="close-alert">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <!-- END OF ALERT -->
+
   <!-- navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light static-top sticky">
     <div class="container">
@@ -211,8 +227,8 @@
               </div>
               <!-- <div class="modal-footer"> -->
                 <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                <input type="submit" class="btn btn-link" id="get-price" value="get price">
-                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
+              <input type="submit" class="btn btn-link" id="get-price" value="get price">
+              <button type="button" class="btn btn-primary" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
               <!-- </div> -->
             </div>
             <!-- <input type="submit" class="btn btn-link btn-sm" id="get-price" value="get price"> -->
@@ -306,7 +322,7 @@
               <!-- <div class="modal-footer"> -->
                 <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
                 <input type="submit" class="btn btn-link" id="get-price2" value="get price">
-                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
+                <button type="button" class="btn btn-primary" id="checkout2" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
               <!-- </div> -->
             </div>
             <!-- <input type="submit" class="btn btn-link btn-sm" id="get-price" value="get price"> -->

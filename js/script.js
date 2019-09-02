@@ -119,6 +119,19 @@ $("#to-be-picked2").click(()=>{
   $("#location-hide2").hide();
 });
 
+let deliveryLocationA = $("#delivery-location").val();
+let deliveryLocationB = $("#delivery-location2").val();
+
+$("#checkout").click(()=>{
+  $("#where-to").text(deliveryLocationA);
+  $("#my-alert").show();
+});
+
+$("#checkout2").click(()=>{
+  $("#where-to2").text(deliveryLocationB);
+  $("#my-alert2").show();
+});
+
 //ui logic
 $("#pizza-one-form").submit((event)=>{
   event.preventDefault();
@@ -128,6 +141,7 @@ $("#pizza-one-form").submit((event)=>{
   let crustType = $("#crust-selector").val();
   let delivery = $("#to-be-delivered").is(":checked");
   let pickUp = $("#to-be-picked").is(":checked");
+
 
   const getDeliveryOption = () => {
     if (delivery == true && pickUp == false){
@@ -147,6 +161,13 @@ $("#pizza-one-form").submit((event)=>{
   $("#toppings-price").text(cheesey.toppings + ": " + cheesey.addToppings());
   $("#crust-price").text(cheesey.crust + ": " + cheesey.chooseCrust());
   $("#delivery-price").text("Delivery fee: " + cheesey.toDeliver());
+
+  //checkout button event
+  $("#checkout").click(()=>{
+    alert("cliqd");
+    $("#where-to").text(deliveryLocation);
+    $("#my-alert").show();
+  });
 
 
 });
