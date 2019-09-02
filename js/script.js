@@ -119,6 +119,7 @@ $("#to-be-picked2").click(()=>{
   $("#location-hide2").hide();
 });
 
+//event
 let deliveryLocationA = $("#delivery-location").val();
 let deliveryLocationB = $("#delivery-location2").val();
 
@@ -162,16 +163,9 @@ $("#pizza-one-form").submit((event)=>{
   $("#crust-price").text(cheesey.crust + ": " + cheesey.chooseCrust());
   $("#delivery-price").text("Delivery fee: " + cheesey.toDeliver());
 
-  //checkout button event
-  $("#checkout").click(()=>{
-    alert("cliqd");
-    $("#where-to").text(deliveryLocation);
-    $("#my-alert").show();
-  });
-
-
 });
 
+//second pizza
 $("#pizza-two-form").submit((event)=>{
   event.preventDefault();
   let pizzaName = $("#pizza-two-label").text();
