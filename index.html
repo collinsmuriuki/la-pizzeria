@@ -159,50 +159,50 @@
           <form id="pizza-one-form">
             <label>
               Quantity:
-              <input type="number" class="form-control" id="pizza-quantity" min="1">
+              <input type="number" class="form-control" id="pizza-quantity" min="1" required>
             </label>
             <br>
             <label>
               Pick Your Size:
-              <select class="form-control drop" id="size-selector">
-                <option>Small</option>
-                <option>Medium</option>
-                <option>Large</option>
+              <select class="form-control drop" id="size-selector" required>
+                <option>Small 300</option>
+                <option>Medium 600</option>
+                <option>Large 800</option>
               </select>
             </label>
             <br>
             <label>
               Topping Options:
-              <select class="form-control drop" id="topping-selector">
+              <select class="form-control drop" id="topping-selector" required>
                 <option>Standard</option>
-                <option>Double Toppings</option>
-                <option>Extra Cheese</option>
-                <option>Extra Dip</option>
-                <option>Diced Pineapples</option>
+                <option>Double Toppings 200</option>
+                <option>Extra Cheese 50</option>
+                <option>Extra Dip 100</option>
+                <option>Diced Pineapples 50</option>
               </select>
             </label>
             <br>
             <label>
               Crust Options:
-              <select class="form-control drop" id="crust-selector">
+              <select class="form-control drop" id="crust-selector" required>
                 <option>Standard</option>
-                <option>Italian Thin Crust</option>
-                <option>Pan Pizza</option>
-                <option>American Hand Tossed</option>
+                <option>Italian Thin Crust 50</option>
+                <option>Pan Pizza 100</option>
+                <option>American Hand Tossed 50</option>
               </select>
             </label>
             <div class="form-check">
               <label for="delivery-options">
                 Delivery:
-                <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered">
+                <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered" required>
               </label>
               <label for="delivery-options">
                 Pick Up:
-                <input type="radio" class="delivery" name="delivery-options" value="pick-up" id="to-be-picked">
+                <input type="radio" class="delivery" name="delivery-options" value="pick-up" id="to-be-picked" required>
               </label>
               <br>
               <label for="location" id="location-hide">
-                <input type="text" class="form-control box" name="location" placeholder="Deliver To" id="delivery-location">
+                <input type="text" class="form-control box" name="location" placeholder="Deliver To" id="delivery-location" required>
               </label>
             </div>
             <div class="container">
@@ -228,7 +228,7 @@
               <!-- <div class="modal-footer"> -->
                 <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
               <input type="submit" class="btn btn-link" id="get-price" value="get price">
-              <button type="button" class="btn btn-primary" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
+              <button type="sumbit" class="btn btn-primary" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
               <!-- </div> -->
             </div>
             <!-- <input type="submit" class="btn btn-link btn-sm" id="get-price" value="get price"> -->
@@ -253,50 +253,50 @@
           <form id="pizza-two-form">
             <label>
               Quantity:
-              <input type="number" class="form-control" id="pizza-quantity2" min="1">
+              <input type="number" class="form-control" id="pizza-quantity2" min="1" required>
             </label>
             <br>
             <label>
               Pick Your Size:
-              <select class="form-control drop" id="size-selector2">
-                <option>Small</option>
-                <option>Medium</option>
-                <option>Large</option>
+              <select class="form-control drop" id="size-selector2" required>
+                <option>Small 400</option>
+                <option>Medium 700</option>
+                <option>Large 900</option>
               </select>
             </label>
             <br>
             <label>
               Topping Options:
-              <select class="form-control drop" id="topping-selector2">
+              <select class="form-control drop" id="topping-selector2" required>
                 <option>Standard</option>
-                <option>Double Toppings</option>
-                <option>Extra Cheese</option>
-                <option>Extra Dip</option>
-                <option>Diced Pineapples</option>
+                <option>Double Toppings 200</option>
+                <option>Extra Cheese 50</option>
+                <option>Extra Dip 100</option>
+                <option>Diced Pineapples 50</option>
               </select>
             </label>
             <br>
             <label>
               Crust Options:
-              <select class="form-control drop" id="crust-selector2">
+              <select class="form-control drop" id="crust-selector2" required>
                 <option>Standard</option>
-                <option>Italian Thin Crust</option>
-                <option>Pan Pizza</option>
-                <option>American Hand Tossed</option>
+                <option>Italian Thin Crust 50</option>
+                <option>Pan Pizza 100</option>
+                <option>American Hand Tossed 50</option>
               </select>
             </label>
             <div class="form-check">
               <label for="delivery-options">
                 Delivery:
-                <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered2">
+                <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered2" required>
               </label>
               <label for="delivery-options">
                 Pick Up:
-                <input type="radio" class="delivery" name="delivery-options" value="pick-up" id="to-be-picked2">
+                <input type="radio" class="delivery" name="delivery-options" value="pick-up" id="to-be-picked2" required>
               </label>
               <br>
               <label for="location" id="location-hide2">
-                <input type="text" class="form-control box" name="location" placeholder="Deliver To" id="delivery-location2">
+                <input type="text" class="form-control box" name="location" placeholder="Deliver To" id="delivery-location2" required>
               </label>
             </div>
             <div class="container">
